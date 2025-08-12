@@ -4,7 +4,7 @@ import { NextResponse } from "next/server";
 
 export const runtime = 'nodejs';
 
-export async function GET(_: Request, { params }: { params: { id: string } }) {
+export async function GET(_: Request, context: any) {
   const session = await auth();
   if (!session) return NextResponse.json({ title: 'Unauthorized' }, { status: 401 });
   const role = (session as any)?.user?.role;
@@ -15,7 +15,8 @@ export async function GET(_: Request, { params }: { params: { id: string } }) {
   const sailing = sailings[0];
   if (!sailing) return NextResponse.json({ guests: [], assignments: [] });
   const assignments = await repo.getCabinAssignmentsBySailing(sailing.id);
-  const inCabin = assignments.filter(a => a.cabinId === params.id);
+  const cabinId = context?.params?.id as string;
+  const inCabin = assignments.filter(a => a.cabinId === cabinId);
 
   const isSelfInCabin = !!sessionGuestId && inCabin.some(a => a.guestId === sessionGuestId);
   if (!(role === 'admin' || role === 'crew' || isSelfInCabin)) {

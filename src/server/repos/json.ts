@@ -1,4 +1,4 @@
-import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import { ulid } from "ulid";
@@ -23,19 +23,32 @@ type Db = {
 const DATA_DIR = path.join(process.cwd(), "data");
 const DB_FILE = path.join(DATA_DIR, "db.json");
 
+let cachedDb: Db | null = null;
+let cachedMtimeMs = 0;
 async function loadDb(): Promise<Db> {
   if (!existsSync(DB_FILE)) {
     await mkdir(DATA_DIR, { recursive: true });
     const empty: Db = { ships: [], sailings: [], cabins: [], guests: [], assignments: [], delegations: [], venues: [], products: [], timeslots: [], bookings: [], payments: [], users: [] };
     await writeFile(DB_FILE, JSON.stringify(empty, null, 2));
+    cachedDb = empty;
+    cachedMtimeMs = Date.now();
     return empty;
   }
+  const st = await stat(DB_FILE);
+  if (cachedDb && st.mtimeMs === cachedMtimeMs) {
+    return cachedDb;
+  }
   const raw = await readFile(DB_FILE, "utf-8");
-  return JSON.parse(raw) as Db;
+  cachedDb = JSON.parse(raw) as Db;
+  cachedMtimeMs = st.mtimeMs;
+  return cachedDb;
 }
 
 async function saveDb(db: Db): Promise<void> {
   await writeFile(DB_FILE, JSON.stringify(db, null, 2));
+  cachedDb = db;
+  const st = await stat(DB_FILE);
+  cachedMtimeMs = st.mtimeMs;
 }
 
 export function createJsonRepo(): Repository {
