@@ -11,14 +11,14 @@ export async function GET() {
   const email = session?.user?.email || undefined;
   const guestId = (session as unknown as { guestId?: string })?.guestId || undefined;
   const access = await resolveEffectiveAccess(repo, { email, guestId });
-  let guest: unknown = null;
+  let guest: { id?: string } | null = null;
   if (email) {
     guest = await repo.getGuestByEmail(email);
   }
   const sailings = await repo.getSailings();
   const currentSailing = sailings[0] || null;
   let assignment: any = null;
-  if (guest && currentSailing) {
+  if (guest?.id && currentSailing) {
     const asns = await repo.getCabinAssignmentsBySailing(currentSailing.id);
     assignment = asns.find((a) => a.guestId === guest.id) || null;
   }
