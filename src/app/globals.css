@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8fbff; /* light nautical sky */
+  --foreground: #0f172a; /* slate-900 */
+  --nautical-navy: #0b2a4a;
+  --nautical-teal: #0ea5e9;
+  --nautical-gold: #f59e0b;
+  --card: #ffffff;
+  --muted: #64748b;
 }
 
 @theme inline {
@@ -14,13 +19,53 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b1220;
+    --foreground: #e2e8f0;
+    --card: #0b1526;
   }
 }
 
 body {
-  background: var(--background);
+  background: radial-gradient(1200px 800px at 50% -200px, #e6f3ff 10%, var(--background) 60%);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
 }
+
+/* Nautical header */
+.nautical-header {
+  background: linear-gradient(180deg, var(--nautical-navy), #10365e 70%);
+  color: #e5f2ff;
+  border-bottom: 3px solid var(--nautical-teal);
+}
+
+.nautical-link {
+  color: #e5f2ff;
+  text-decoration: none;
+}
+.nautical-link:hover { color: #ffffff; text-decoration: underline; }
+
+.nautical-badge {
+  display: inline-block;
+  background: var(--nautical-teal);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(15, 23, 42, 0.07);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(2, 8, 23, 0.06);
+}
+
+.btn {
+  background: var(--nautical-navy);
+  color: white;
+  padding: 8px 14px;
+  border-radius: 10px;
+}
+.btn:hover { background: #0d355f; }
+.btn-secondary { background: var(--nautical-teal); }
+.btn-secondary:hover { background: #0284c7; }

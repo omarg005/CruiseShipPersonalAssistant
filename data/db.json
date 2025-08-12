@@ -2180,6 +2180,69 @@
         "01K2G3TF0SM5HM7ZMYEVKYPYVH",
         "01K2G3TF0SDT3BABSMP31FM8YR"
       ]
+    },
+    {
+      "id": "01K2GA691143EBZFCRQCVJ1YN5",
+      "guestId": "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "status": "confirmed",
+      "createdAt": "2025-08-12T23:35:02.947Z",
+      "items": [
+        {
+          "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+          "timeslotId": "01K2G3TF1363Q45Z6ZRQ4J4R4D",
+          "quantity": 2,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0,
+      "attendeeGuestIds": [
+        "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+        "01K2G3TF0SDT3BABSMP31FM8YR"
+      ]
+    },
+    {
+      "id": "01K2GAB13FJ3KFZX90G5EFVGHT",
+      "guestId": "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "status": "confirmed",
+      "createdAt": "2025-08-12T23:37:38.671Z",
+      "items": [
+        {
+          "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+          "timeslotId": "01K2G3TF16EQCTTBP4W1BBJ2SD",
+          "quantity": 2,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0,
+      "attendeeGuestIds": [
+        "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+        "01K2G3TF0SDT3BABSMP31FM8YR"
+      ]
+    },
+    {
+      "id": "01K2GAEWN0DS4X377QQWG1AFBK",
+      "guestId": "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "status": "confirmed",
+      "createdAt": "2025-08-12T23:39:45.185Z",
+      "items": [
+        {
+          "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+          "timeslotId": "01K2G3TF18DK83T5CMHRYD1RVD",
+          "quantity": 2,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0,
+      "attendeeGuestIds": [
+        "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+        "01K2G3TF0SDT3BABSMP31FM8YR"
+      ]
     }
   ],
   "payments": [
@@ -2214,6 +2277,30 @@
       "status": "captured",
       "id": "01K2G65TNG2S6RZPVZFWJJFKCZ",
       "createdAt": "2025-08-12T22:24:53.936Z"
+    },
+    {
+      "bookingId": "01K2GA691143EBZFCRQCVJ1YN5",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2GA699HRJ9N8A15YMW16ARQ",
+      "createdAt": "2025-08-12T23:35:03.217Z"
+    },
+    {
+      "bookingId": "01K2GAB13FJ3KFZX90G5EFVGHT",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2GAB13JY0RAXZDCJCK646BX",
+      "createdAt": "2025-08-12T23:37:38.675Z"
+    },
+    {
+      "bookingId": "01K2GAEWN0DS4X377QQWG1AFBK",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2GAEWN367P256AKYB100SXV",
+      "createdAt": "2025-08-12T23:39:45.187Z"
     }
   ],
   "users": [

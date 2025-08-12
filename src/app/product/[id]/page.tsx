@@ -3,6 +3,7 @@ import Providers from "../../providers";
 import GuestPicker from "./GuestPicker";
 import BookSuccessModal from "./BookSuccessModal";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
+import { useState } from "react";
 import { api } from "@/lib/api";
 import { useParams } from "next/navigation";
 
@@ -83,7 +84,7 @@ function ProductInner() {
     }
   });
 
-  const [modal, setModal] = (globalThis as any).React?.useState?.({ open: false, timeslot: null as any, attendees: [] as any[] }) || [ { open: false, timeslot: null, attendees: [] }, () => {} ];
+  const [modal, setModal] = useState<{ open: boolean; timeslot: any; attendees: any[] }>({ open: false, timeslot: null, attendees: [] });
   return (
     <div className="space-y-4">
       {!product ? (

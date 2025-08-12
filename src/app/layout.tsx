@@ -30,22 +30,32 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <nav className="p-3 border-b flex gap-4 text-sm">
-          <Link href="/" className="underline">Home</Link>
-          <Link href="/dashboard" className="underline">Dashboard</Link>
-          <Link href="/itinerary" className="underline">Itinerary</Link>
-          <Link href="/catalog" className="underline">Catalog</Link>
-          <Link href="/my-cabin" className="underline">My Cabin</Link>
-          <Link href="/login" className="underline">Login</Link>
-          <Link href="/docs" className="underline">API Docs</Link>
-          <Link href="/users" className="underline">Users</Link>
-          <Link href="/cabins" className="underline">Cabins</Link>
-        </nav>
-        <main className="p-4">
+        <header className="nautical-header">
+          <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+            <div className="flex items-center gap-3">
+              <span className="nautical-badge">HZN</span>
+              <div className="text-sm">MV Horizon</div>
+            </div>
+            <nav className="flex gap-4 text-sm">
+              <Link href="/" className="nautical-link">Home</Link>
+              <Link href="/dashboard" className="nautical-link">Dashboard</Link>
+              <Link href="/itinerary" className="nautical-link">Itinerary</Link>
+              <Link href="/catalog" className="nautical-link">Catalog</Link>
+              <Link href="/my-cabin" className="nautical-link">My Cabin</Link>
+              <Link href="/docs" className="nautical-link">API Docs</Link>
+              <Link href="/users" className="nautical-link">Users</Link>
+              <Link href="/cabins" className="nautical-link">Cabins</Link>
+            </nav>
+          </div>
+        </header>
+        <main className="p-4 max-w-6xl mx-auto">
           <Providers>
             {children}
           </Providers>
         </main>
+        <footer className="max-w-6xl mx-auto px-4 pb-6 text-xs text-slate-500">
+          © {new Date().getFullYear()} MV Horizon · Cruise Onboard Booking Demo
+        </footer>
       </body>
     </html>
   );
