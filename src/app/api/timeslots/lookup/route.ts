@@ -8,7 +8,7 @@ export async function GET(req: Request) {
   const idsParam = searchParams.get('ids') || '';
   const ids = Array.from(new Set(idsParam.split(',').map((s) => s.trim()).filter(Boolean)));
   const repo = getRepo();
-  const timeslots = [] as any[];
+  const timeslots: Record<string, unknown>[] = [];
   for (const id of ids) {
     const ts = await repo.getTimeslotById(id);
     if (ts) timeslots.push(ts);

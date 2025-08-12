@@ -16,7 +16,7 @@ function CabinInner() {
   const params = useParams<{ id: string }>();
   const { data: shipList } = useQuery({ queryKey: ['ships'], queryFn: () => api<any[]>('/api/ships') });
   const shipId = shipList?.[0]?.id;
-  const { data: cabin } = useQuery({ queryKey: ['cabin', params.id], queryFn: () => api<any>(`/api/cabins?shipId=${shipId}`).then(list => list.find((c:any)=>c.id===params.id)), enabled: !!shipId });
+  const { data: cabin } = useQuery({ queryKey: ['cabin', params.id], queryFn: () => api<any>(`/api/cabins?shipId=${shipId}`).then((list:any[]) => list.find((c:any)=>c.id===params.id)), enabled: !!shipId });
   const { data: data } = useQuery({ queryKey: ['cabinGuests', params.id], queryFn: () => api<any>(`/api/cabins/${params.id}/guests`) });
   return (
     <div className="space-y-4">

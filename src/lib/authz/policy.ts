@@ -18,14 +18,14 @@ export async function resolveEffectiveAccess(repo: Repository, opts: { email?: s
   if (!opts.email && !opts.guestId) return result;
   const account = opts.email ? await repo.getUserAccountByEmail(opts.email) : null;
   const guestId = opts.guestId || account?.guestId || null;
-  if (account?.role) (result.role as any) = account.role as any;
+  if (account?.role) (result.role as EffectiveAccess["role"]) = account.role as any;
   if (guestId) result.selfGuestIds.push(guestId);
   if (guestId) {
     const delegations = await repo.getDelegationsForGuest(guestId);
     for (const d of delegations) {
       if (d.cabinId) result.cabinIdsManaged.push(d.cabinId);
       if (d.sailingId) result.sailingIdsManaged.push(d.sailingId);
-      if ((d as any).scope === "MANAGE") (result.role as any) = "cabin-manager";
+      if (d.scope === "MANAGE") (result.role as EffectiveAccess["role"]) = "cabin-manager";
     }
   }
   return result;

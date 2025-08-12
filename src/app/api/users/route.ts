@@ -6,7 +6,7 @@ export const runtime = 'nodejs';
 
 export async function GET() {
   const session = await auth();
-  const role = (session as any)?.user?.role;
+  const role = (session as unknown as { user?: { role?: string } })?.user?.role;
   if (!session || (role !== 'admin' && role !== 'crew')) {
     return NextResponse.json({ title: 'Forbidden' }, { status: 403 });
   }
@@ -14,8 +14,8 @@ export async function GET() {
   const users = await repo.getUsers();
   const sailings = await repo.getSailings();
   const current = sailings[0];
-  let assignments: any[] = [];
-  let cabins: any[] = [];
+  let assignments: Array<{ guestId: string; cabinId: string }> = [];
+  let cabins: Array<{ id: string; number: string; deck: number }> = [];
   if (current) {
     assignments = await repo.getCabinAssignmentsBySailing(current.id);
     cabins = await repo.getCabinsBySailing(current.id);

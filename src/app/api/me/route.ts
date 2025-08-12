@@ -9,9 +9,9 @@ export async function GET() {
   const session = await auth();
   const repo = getRepo();
   const email = session?.user?.email || undefined;
-  const guestId = (session as any)?.guestId || undefined;
+  const guestId = (session as unknown as { guestId?: string })?.guestId || undefined;
   const access = await resolveEffectiveAccess(repo, { email, guestId });
-  let guest = null as any;
+  let guest: unknown = null;
   if (email) {
     guest = await repo.getGuestByEmail(email);
   }

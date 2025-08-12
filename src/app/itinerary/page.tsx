@@ -13,7 +13,7 @@ export default function ItineraryPage() {
 
 function ItineraryInner() {
   const { data: sailings } = useQuery({ queryKey: ["sailings"], queryFn: () => api<any[]>("/api/sailings") });
-  const sailing = sailings?.[0];
+  const sailing = (sailings || [])[0] as any;
   return (
     <div>
       <h1 className="text-xl font-semibold mb-2">Itinerary</h1>

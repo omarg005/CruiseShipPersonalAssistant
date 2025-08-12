@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,15 +31,15 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <nav className="p-3 border-b flex gap-4 text-sm">
-          <a href="/" className="underline">Home</a>
-          <a href="/dashboard" className="underline">Dashboard</a>
-          <a href="/itinerary" className="underline">Itinerary</a>
-          <a href="/catalog" className="underline">Catalog</a>
-          <a href="/my-cabin" className="underline">My Cabin</a>
-          <a href="/login" className="underline">Login</a>
-          <a href="/docs" className="underline">API Docs</a>
-          <a href="/users" className="underline">Users</a>
-          <a href="/cabins" className="underline">Cabins</a>
+          <Link href="/" className="underline">Home</Link>
+          <Link href="/dashboard" className="underline">Dashboard</Link>
+          <Link href="/itinerary" className="underline">Itinerary</Link>
+          <Link href="/catalog" className="underline">Catalog</Link>
+          <Link href="/my-cabin" className="underline">My Cabin</Link>
+          <Link href="/login" className="underline">Login</Link>
+          <Link href="/docs" className="underline">API Docs</Link>
+          <Link href="/users" className="underline">Users</Link>
+          <Link href="/cabins" className="underline">Cabins</Link>
         </nav>
         <main className="p-4">
           <Providers>

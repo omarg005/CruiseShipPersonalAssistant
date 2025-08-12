@@ -15,7 +15,7 @@ export default function DocsPage() {
     script.src = "https://unpkg.com/swagger-ui-dist@5/swagger-ui-bundle.js";
     script.async = true;
     script.onload = () => {
-      // @ts-ignore
+      // @ts-expect-error injected by CDN
       const SwaggerUIBundle = window.SwaggerUIBundle;
       if (SwaggerUIBundle && containerRef.current) {
         SwaggerUIBundle({

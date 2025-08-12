@@ -23,7 +23,7 @@ export async function POST(req: Request) {
     const session = await auth();
     const repo = getRepo();
     const email = session?.user?.email || undefined;
-    const guestId = (session as any)?.guestId || undefined;
+    const guestId = (session as unknown as { guestId?: string })?.guestId || undefined;
     const access = await resolveEffectiveAccess(repo, { email, guestId });
     if (!guestId) return NextResponse.json({ title: "Unauthorized" }, { status: 401 });
 
@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     // Prevent conflicts: same timeslot or overlapping timeslots
     const existing = await repo.getBookingsByGuest(parsed.data.guestId, parsed.data.sailingId);
     const requestedTimeslotIds = new Set(parsed.data.items.map((i) => i.timeslotId));
-    const requestedSlots = [] as Array<{ id: string; productId: string; start: string; end: string }>;
+    const requestedSlots: Array<{ id: string; productId: string; start: string; end: string }> = [];
     for (const item of parsed.data.items) {
       const ts = await repo.getTimeslotById(item.timeslotId);
       if (!ts) {

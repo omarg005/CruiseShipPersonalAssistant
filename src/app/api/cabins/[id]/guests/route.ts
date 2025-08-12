@@ -8,7 +8,7 @@ export async function GET(_: Request, { params }: { params: { id: string } }) {
   const session = await auth();
   if (!session) return NextResponse.json({ title: 'Unauthorized' }, { status: 401 });
   const role = (session as any)?.user?.role;
-  const sessionGuestId = (session as any)?.guestId as string | undefined;
+  const sessionGuestId = (session as unknown as { guestId?: string })?.guestId as string | undefined;
 
   const repo = getRepo();
   const sailings = await repo.getSailings();
