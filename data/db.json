@@ -1,0 +1,2611 @@
+{
+  "ships": [
+    {
+      "id": "01K2G3TF07FWTC5WRNH888778E",
+      "name": "MV Horizon",
+      "code": "HZN",
+      "decks": 14,
+      "venues": [
+        {
+          "id": "01K2G3TF08VWQXBB7RCJXDKGG7",
+          "shipId": "01K2G3TF07FWTC5WRNH888778E",
+          "type": "restaurant",
+          "name": "Aurora",
+          "deck": 7
+        },
+        {
+          "id": "01K2G3TF0870XSQXSP4RG2DZBX",
+          "shipId": "01K2G3TF07FWTC5WRNH888778E",
+          "type": "restaurant",
+          "name": "Celeste",
+          "deck": 8
+        },
+        {
+          "id": "01K2G3TF082TR6VXC5P9CRJ12Y",
+          "shipId": "01K2G3TF07FWTC5WRNH888778E",
+          "type": "restaurant",
+          "name": "Luna Buffet",
+          "deck": 14
+        },
+        {
+          "id": "01K2G3TF094JMQ0JZV149FJ3Q7",
+          "shipId": "01K2G3TF07FWTC5WRNH888778E",
+          "type": "theater",
+          "name": "Orion Theater",
+          "deck": 5
+        },
+        {
+          "id": "01K2G3TF09W3XG87G3H501R4F3",
+          "shipId": "01K2G3TF07FWTC5WRNH888778E",
+          "type": "spa",
+          "name": "Zen Spa",
+          "deck": 12
+        },
+        {
+          "id": "01K2G3TF09PX7MSD5GKRDPQGY0",
+          "shipId": "01K2G3TF07FWTC5WRNH888778E",
+          "type": "activity",
+          "name": "Constellation Hall",
+          "deck": 6
+        }
+      ]
+    }
+  ],
+  "sailings": [
+    {
+      "id": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "startDate": "2025-08-12T16:00:00.000Z",
+      "endDate": "2025-08-19T16:00:00.000Z",
+      "itineraryDays": [
+        {
+          "dayNumber": 1,
+          "date": "2025-08-12T16:00:00.000Z",
+          "portName": "Miami"
+        },
+        {
+          "dayNumber": 2,
+          "date": "2025-08-13T16:00:00.000Z",
+          "portName": "Sea Day"
+        },
+        {
+          "dayNumber": 3,
+          "date": "2025-08-14T16:00:00.000Z",
+          "portName": "Cozumel"
+        },
+        {
+          "dayNumber": 4,
+          "date": "2025-08-15T16:00:00.000Z",
+          "portName": "Sea Day"
+        },
+        {
+          "dayNumber": 5,
+          "date": "2025-08-16T16:00:00.000Z",
+          "portName": "Grand Cayman"
+        },
+        {
+          "dayNumber": 6,
+          "date": "2025-08-17T16:00:00.000Z",
+          "portName": "Sea Day"
+        },
+        {
+          "dayNumber": 7,
+          "date": "2025-08-18T16:00:00.000Z",
+          "portName": "Miami"
+        }
+      ]
+    }
+  ],
+  "cabins": [
+    {
+      "id": "01K2G3TF0GGJTV36C9XACXM4QK",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "6010",
+      "deck": 6,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0G0ABH3BS7FXPPXSTN",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "6011",
+      "deck": 6,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0GWHB0JKXGKWPZFMC0",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "6012",
+      "deck": 6,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0G5H0JX7DT394WSXFP",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "6013",
+      "deck": 6,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0GK7RFJ4T99SYPZYAX",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "6014",
+      "deck": 6,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0HKDMYWZ3RPXCPWMXM",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "6015",
+      "deck": 6,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0HAXZGDJDW0CSNCBC3",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "7016",
+      "deck": 7,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "7017",
+      "deck": 7,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0HQSDR2F4532R5XTXW",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "7018",
+      "deck": 7,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0H0YEZDX0S18J8V1V5",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "7019",
+      "deck": 7,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0HHF7TA88SPNY1371V",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "7020",
+      "deck": 7,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0H1EQCMQSJ7M3VE9J0",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "7021",
+      "deck": 7,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0H968V99DRVK3HGW7M",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "8022",
+      "deck": 8,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0JKFD0RRTM3EM0372V",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "8023",
+      "deck": 8,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0J5JFS57EMM83PS4AE",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "8024",
+      "deck": 8,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0JEWWXH8SR1RWF53AW",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "8025",
+      "deck": 8,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0JMHTMXS2SKBE046C1",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "8026",
+      "deck": 8,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0JDEZXMTXS990XF8XM",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "8027",
+      "deck": 8,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0J1FCMCABK12G8R6TP",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "9028",
+      "deck": 9,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0JYE0CE6461W906CMW",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "9029",
+      "deck": 9,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0JDVMW5DXTY2VFHWCD",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "9030",
+      "deck": 9,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0J2PJXKVT17C8DFC9V",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "9031",
+      "deck": 9,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0JFPN8G7JGG42FYM6F",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "9032",
+      "deck": 9,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0JGM8X1TNYVKFM165E",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "9033",
+      "deck": 9,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0J8XNDNPVYHDDP2SH7",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "10034",
+      "deck": 10,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0J9HAKAZW4P6Z8V8QE",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "10035",
+      "deck": 10,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0J3PVYBRF0AS8HPWX2",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "10036",
+      "deck": 10,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0JYZV22QH1VGRH45RY",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "10037",
+      "deck": 10,
+      "category": "Inside",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0KW4Z6S67YEGJQ8NFB",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "10038",
+      "deck": 10,
+      "category": "Oceanview",
+      "maxOccupancy": 3
+    },
+    {
+      "id": "01K2G3TF0KDKYS358YZ1HEXYJW",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "10039",
+      "deck": 10,
+      "category": "Balcony",
+      "maxOccupancy": 4
+    },
+    {
+      "id": "01K2G3TF0KASPRCQSK9Z1D35MF",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "Captains Quarters",
+      "deck": 12,
+      "category": "Suite",
+      "maxOccupancy": 2
+    },
+    {
+      "id": "01K2G3TF0KJCRANG2P50TZG047",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "number": "Crew Quarters",
+      "deck": 2,
+      "category": "Crew",
+      "maxOccupancy": 4
+    }
+  ],
+  "guests": [
+    {
+      "id": "01K2G3TF0K54V0JTD57SX3VAZQ",
+      "email": "guest01@example.com",
+      "firstName": "Guest1",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0NP2EQ1GK7KWHP6Y19",
+      "email": "guest02@example.com",
+      "firstName": "Guest2",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0NN2ETNAWYW6ZK3VTZ",
+      "email": "guest03@example.com",
+      "firstName": "Guest3",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0P8F54ZQVW063V44HM",
+      "email": "guest04@example.com",
+      "firstName": "Guest4",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0PVDH16VJ15J9PRJ1D",
+      "email": "guest05@example.com",
+      "firstName": "Guest5",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0PP6ASQYPN1JHRX93S",
+      "email": "guest06@example.com",
+      "firstName": "Guest6",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0PBKMZRBMYCBE91E7H",
+      "email": "guest07@example.com",
+      "firstName": "Guest7",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0PR6WJTXJCZP2C3VBF",
+      "email": "guest08@example.com",
+      "firstName": "Guest8",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0QRTPDRTJ3WE5G5PKS",
+      "email": "guest09@example.com",
+      "firstName": "Guest9",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0R92AZN3EVRPRTX2QY",
+      "email": "guest10@example.com",
+      "firstName": "Guest10",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0RTJXN62EHYJFN0V93",
+      "email": "guest11@example.com",
+      "firstName": "Guest11",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0R0V5W5X81QF22AREC",
+      "email": "guest12@example.com",
+      "firstName": "Guest12",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0RCA9BA977FBDZY7F0",
+      "email": "guest13@example.com",
+      "firstName": "Guest13",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0RWCJWPSVD59NYRZWK",
+      "email": "guest14@example.com",
+      "firstName": "Guest14",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+      "email": "guest15@example.com",
+      "firstName": "Guest15",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0SDT3BABSMP31FM8YR",
+      "email": "guest16@example.com",
+      "firstName": "Guest16",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0S99ND7F7D0DD42C2T",
+      "email": "guest17@example.com",
+      "firstName": "Guest17",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0SENW7S2WQNT3D9A8P",
+      "email": "guest18@example.com",
+      "firstName": "Guest18",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0SD00AHZBN44YNF5ZG",
+      "email": "guest19@example.com",
+      "firstName": "Guest19",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0SVBQR3EMTD3XJWRQ9",
+      "email": "guest20@example.com",
+      "firstName": "Guest20",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0SM19C3A7S2ZKRPH91",
+      "email": "guest21@example.com",
+      "firstName": "Guest21",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0TJCH0XAB4T7NF1ZHX",
+      "email": "guest22@example.com",
+      "firstName": "Guest22",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0T5FTX5MGQJNA9A5FQ",
+      "email": "guest23@example.com",
+      "firstName": "Guest23",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0TZFM8XV4WDFS5BD2Y",
+      "email": "guest24@example.com",
+      "firstName": "Guest24",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0TECEV5KC90MKWCDKJ",
+      "email": "guest25@example.com",
+      "firstName": "Guest25",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0TJB6V4YWBB51WCCMW",
+      "email": "guest26@example.com",
+      "firstName": "Guest26",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0TNRGHRDBGHWY4DPVN",
+      "email": "guest27@example.com",
+      "firstName": "Guest27",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0V5VA7106HYMMAT5V9",
+      "email": "guest28@example.com",
+      "firstName": "Guest28",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0VYPR67R92MXVKQXX2",
+      "email": "guest29@example.com",
+      "firstName": "Guest29",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0VPJGVGP93GWANJ9CH",
+      "email": "guest30@example.com",
+      "firstName": "Guest30",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0V4YR6X3NGC2CV2E2V",
+      "email": "guest31@example.com",
+      "firstName": "Guest31",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0VX7K0WTQ4XY87070S",
+      "email": "guest32@example.com",
+      "firstName": "Guest32",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0VDDHNX41DVCJYCPDY",
+      "email": "guest33@example.com",
+      "firstName": "Guest33",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0WQD2F60AGSG4TBKV1",
+      "email": "guest34@example.com",
+      "firstName": "Guest34",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0W1YACWQ6Y91BB6837",
+      "email": "guest35@example.com",
+      "firstName": "Guest35",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0WKCGXJ5T43F07Q7AE",
+      "email": "guest36@example.com",
+      "firstName": "Guest36",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0WVNWEPHR7DGQ3VSR5",
+      "email": "guest37@example.com",
+      "firstName": "Guest37",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0W8W5T5GRHM7XF4X56",
+      "email": "guest38@example.com",
+      "firstName": "Guest38",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0W5K9GH1T8C9HNMJ7N",
+      "email": "guest39@example.com",
+      "firstName": "Guest39",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0X0RM6BF0AM7TADGYZ",
+      "email": "guest40@example.com",
+      "firstName": "Guest40",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0Y6JXK1C5HPZB70AYS",
+      "email": "guest41@example.com",
+      "firstName": "Guest41",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0Y820RAVAC690NZN1P",
+      "email": "guest42@example.com",
+      "firstName": "Guest42",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0YAFN7SWWVDETMDD80",
+      "email": "guest43@example.com",
+      "firstName": "Guest43",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0YVVAR4Q28Y7RH7D66",
+      "email": "guest44@example.com",
+      "firstName": "Guest44",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0YCY0JNBYMWX8NNB3C",
+      "email": "guest45@example.com",
+      "firstName": "Guest45",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0Y8Q26ZQ5VDF2PHCD3",
+      "email": "guest46@example.com",
+      "firstName": "Guest46",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0Z697N7701MFKXX91E",
+      "email": "guest47@example.com",
+      "firstName": "Guest47",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0Z2P76CDNCADM667S6",
+      "email": "guest48@example.com",
+      "firstName": "Guest48",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0ZSWDSV0HYDNHPAJA9",
+      "email": "guest49@example.com",
+      "firstName": "Guest49",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF0ZF6QC868VT3M0W68Z",
+      "email": "guest50@example.com",
+      "firstName": "Guest50",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF10W0VGY9HHPBS64APH",
+      "email": "guest51@example.com",
+      "firstName": "Guest51",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF10KRJFX8PE7H6Z1QGJ",
+      "email": "guest52@example.com",
+      "firstName": "Guest52",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF109VC9F90DXTFYHPG4",
+      "email": "guest53@example.com",
+      "firstName": "Guest53",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF107FMEA26N1TH80H1Y",
+      "email": "guest54@example.com",
+      "firstName": "Guest54",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF113ZN4HE1WG6RBW26S",
+      "email": "guest55@example.com",
+      "firstName": "Guest55",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF11RD989TBMFMJZ2HS1",
+      "email": "guest56@example.com",
+      "firstName": "Guest56",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF110YBSKPE75EH07CJC",
+      "email": "guest57@example.com",
+      "firstName": "Guest57",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF11XZ2GF5PQS443N539",
+      "email": "guest58@example.com",
+      "firstName": "Guest58",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF115QV1EVDD7ABKYDCQ",
+      "email": "guest59@example.com",
+      "firstName": "Guest59",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF11XK2VWGQ7GAC8A6BD",
+      "email": "guest60@example.com",
+      "firstName": "Guest60",
+      "lastName": "Demo",
+      "dateOfBirth": "1990-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF12AVV90P0ZAA9MQ8X3",
+      "email": "crew@example.com",
+      "firstName": "Crew",
+      "lastName": "Member",
+      "dateOfBirth": "1985-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "01K2G3TF126MF33MWQVMW33PAH",
+      "email": "admin@example.com",
+      "firstName": "Captain",
+      "lastName": "Admin",
+      "dateOfBirth": "1975-01-01T00:00:00.000Z"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "01K2G3TF0M9HX6JN977Z0YT5A3",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GGJTV36C9XACXM4QK",
+      "guestId": "01K2G3TF0K54V0JTD57SX3VAZQ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0NM8K6QFF8J66GPZA6",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GGJTV36C9XACXM4QK",
+      "guestId": "01K2G3TF0NP2EQ1GK7KWHP6Y19",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0PTDZ082SWFBBX0DDY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0G0ABH3BS7FXPPXSTN",
+      "guestId": "01K2G3TF0NN2ETNAWYW6ZK3VTZ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0PCH49P3PC7MHJWEPW",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0G0ABH3BS7FXPPXSTN",
+      "guestId": "01K2G3TF0P8F54ZQVW063V44HM",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0PJZ59V71716PXG1C3",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GWHB0JKXGKWPZFMC0",
+      "guestId": "01K2G3TF0PVDH16VJ15J9PRJ1D",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0PX7HNJY5CE9828GDE",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GWHB0JKXGKWPZFMC0",
+      "guestId": "01K2G3TF0PP6ASQYPN1JHRX93S",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0PTD7ZEBF8E877AGPH",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0G5H0JX7DT394WSXFP",
+      "guestId": "01K2G3TF0PBKMZRBMYCBE91E7H",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0QQRG2Z0MWSDV0QH03",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0G5H0JX7DT394WSXFP",
+      "guestId": "01K2G3TF0PR6WJTXJCZP2C3VBF",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0R2PEHD9TA2VWB055R",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GK7RFJ4T99SYPZYAX",
+      "guestId": "01K2G3TF0QRTPDRTJ3WE5G5PKS",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0RH5NT2TTWZ3XNJRHE",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GK7RFJ4T99SYPZYAX",
+      "guestId": "01K2G3TF0R92AZN3EVRPRTX2QY",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0R73KFS048XZMD900P",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKDMYWZ3RPXCPWMXM",
+      "guestId": "01K2G3TF0RTJXN62EHYJFN0V93",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0RE6M19Q9A3G5XC2H9",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKDMYWZ3RPXCPWMXM",
+      "guestId": "01K2G3TF0R0V5W5X81QF22AREC",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0R2FH2GR2MFFF4NANF",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HAXZGDJDW0CSNCBC3",
+      "guestId": "01K2G3TF0RCA9BA977FBDZY7F0",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0RC8CAKAFS7SCRSFJ6",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HAXZGDJDW0CSNCBC3",
+      "guestId": "01K2G3TF0RWCJWPSVD59NYRZWK",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0SZKK6Q6PKHZ8K9RXD",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "guestId": "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0SWG4KD92KPK0Q62M7",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "guestId": "01K2G3TF0SDT3BABSMP31FM8YR",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0SHX95K8QN87ZRYNF5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HQSDR2F4532R5XTXW",
+      "guestId": "01K2G3TF0S99ND7F7D0DD42C2T",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0SAF6WW0V591WA340J",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HQSDR2F4532R5XTXW",
+      "guestId": "01K2G3TF0SENW7S2WQNT3D9A8P",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0SE1X8AXJJ32J04857",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0H0YEZDX0S18J8V1V5",
+      "guestId": "01K2G3TF0SD00AHZBN44YNF5ZG",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0S1KQ6Q00NFB7351DX",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0H0YEZDX0S18J8V1V5",
+      "guestId": "01K2G3TF0SVBQR3EMTD3XJWRQ9",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0T004CNSWA4DNHREEP",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HHF7TA88SPNY1371V",
+      "guestId": "01K2G3TF0SM19C3A7S2ZKRPH91",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0TP2153FAVTJ0FR81W",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HHF7TA88SPNY1371V",
+      "guestId": "01K2G3TF0TJCH0XAB4T7NF1ZHX",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0T1JW2HC6SR7THESPB",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0H1EQCMQSJ7M3VE9J0",
+      "guestId": "01K2G3TF0T5FTX5MGQJNA9A5FQ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0TZEMK8X5KNBRZ7WJB",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0H1EQCMQSJ7M3VE9J0",
+      "guestId": "01K2G3TF0TZFM8XV4WDFS5BD2Y",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0T6MWY6RQA3PD3T8CR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0H968V99DRVK3HGW7M",
+      "guestId": "01K2G3TF0TECEV5KC90MKWCDKJ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0THSEFQXH43NY6DA8H",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0H968V99DRVK3HGW7M",
+      "guestId": "01K2G3TF0TJB6V4YWBB51WCCMW",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0VCJR3RVK6C3790XHA",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JKFD0RRTM3EM0372V",
+      "guestId": "01K2G3TF0TNRGHRDBGHWY4DPVN",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0VSCJWKQ6TK6KQVR5Z",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JKFD0RRTM3EM0372V",
+      "guestId": "01K2G3TF0V5VA7106HYMMAT5V9",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0VSN0PBGGN3430BQS5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J5JFS57EMM83PS4AE",
+      "guestId": "01K2G3TF0VYPR67R92MXVKQXX2",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0V0QMGY1N0SB4C3B47",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J5JFS57EMM83PS4AE",
+      "guestId": "01K2G3TF0VPJGVGP93GWANJ9CH",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0V7Z2D24Y49PYAW3DQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JEWWXH8SR1RWF53AW",
+      "guestId": "01K2G3TF0V4YR6X3NGC2CV2E2V",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0V2GESFBQ0SDMHF6S7",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JEWWXH8SR1RWF53AW",
+      "guestId": "01K2G3TF0VX7K0WTQ4XY87070S",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0WRC2VZCN92P880TGJ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JMHTMXS2SKBE046C1",
+      "guestId": "01K2G3TF0VDDHNX41DVCJYCPDY",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0WF9B7JCZDSQGX1Q0D",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JMHTMXS2SKBE046C1",
+      "guestId": "01K2G3TF0WQD2F60AGSG4TBKV1",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0WYVCJRMHYQA7XXR4D",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JDEZXMTXS990XF8XM",
+      "guestId": "01K2G3TF0W1YACWQ6Y91BB6837",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0W2D4M3WP3GGVV6HXD",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JDEZXMTXS990XF8XM",
+      "guestId": "01K2G3TF0WKCGXJ5T43F07Q7AE",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0WR63E1GBMPFT42H28",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J1FCMCABK12G8R6TP",
+      "guestId": "01K2G3TF0WVNWEPHR7DGQ3VSR5",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0WRQX44V4MSF54YV5E",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J1FCMCABK12G8R6TP",
+      "guestId": "01K2G3TF0W8W5T5GRHM7XF4X56",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0XQF1S3KRWR7EBHNBT",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JYE0CE6461W906CMW",
+      "guestId": "01K2G3TF0W5K9GH1T8C9HNMJ7N",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0X17JNXQZEVXVT8P8P",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JYE0CE6461W906CMW",
+      "guestId": "01K2G3TF0X0RM6BF0AM7TADGYZ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0YZ1RJGMJGRHE486BQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JDVMW5DXTY2VFHWCD",
+      "guestId": "01K2G3TF0Y6JXK1C5HPZB70AYS",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0YF02VH5HP0NVR5PPY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JDVMW5DXTY2VFHWCD",
+      "guestId": "01K2G3TF0Y820RAVAC690NZN1P",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0YS6SV1KPRX8581BEW",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J2PJXKVT17C8DFC9V",
+      "guestId": "01K2G3TF0YAFN7SWWVDETMDD80",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0Y48EJZXP19JGB4161",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J2PJXKVT17C8DFC9V",
+      "guestId": "01K2G3TF0YVVAR4Q28Y7RH7D66",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0YXY96XEME15SHFJCY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JFPN8G7JGG42FYM6F",
+      "guestId": "01K2G3TF0YCY0JNBYMWX8NNB3C",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0ZKXPS2FMAVWKHC0SF",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JFPN8G7JGG42FYM6F",
+      "guestId": "01K2G3TF0Y8Q26ZQ5VDF2PHCD3",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0Z7KVX5VH2VGQ3F887",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JGM8X1TNYVKFM165E",
+      "guestId": "01K2G3TF0Z697N7701MFKXX91E",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF0ZQ9BHWK7T2XXPGR5F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JGM8X1TNYVKFM165E",
+      "guestId": "01K2G3TF0Z2P76CDNCADM667S6",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF0ZFVDNCEQV3EFDFG7H",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J8XNDNPVYHDDP2SH7",
+      "guestId": "01K2G3TF0ZSWDSV0HYDNHPAJA9",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF109XRSWX6G2P22SFN4",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J8XNDNPVYHDDP2SH7",
+      "guestId": "01K2G3TF0ZF6QC868VT3M0W68Z",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF10215D9WGGCCW358KT",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J9HAKAZW4P6Z8V8QE",
+      "guestId": "01K2G3TF10W0VGY9HHPBS64APH",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF103C1RXRT89XE0FX5N",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J9HAKAZW4P6Z8V8QE",
+      "guestId": "01K2G3TF10KRJFX8PE7H6Z1QGJ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF10C6XX2MZ49RSX2H56",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J3PVYBRF0AS8HPWX2",
+      "guestId": "01K2G3TF109VC9F90DXTFYHPG4",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF118KQWV4CJVR41CM3K",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0J3PVYBRF0AS8HPWX2",
+      "guestId": "01K2G3TF107FMEA26N1TH80H1Y",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF11W1XWVQKFQ6T5X7ES",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JYZV22QH1VGRH45RY",
+      "guestId": "01K2G3TF113ZN4HE1WG6RBW26S",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF11DSKNRHNX8MZCQZCW",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0JYZV22QH1VGRH45RY",
+      "guestId": "01K2G3TF11RD989TBMFMJZ2HS1",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF11KNJZ8Y04GYWWB17K",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KW4Z6S67YEGJQ8NFB",
+      "guestId": "01K2G3TF110YBSKPE75EH07CJC",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF1188MB3W2QF94XTT5N",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KW4Z6S67YEGJQ8NFB",
+      "guestId": "01K2G3TF11XZ2GF5PQS443N539",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF11FTZRAT5K472TA6AK",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KDKYS358YZ1HEXYJW",
+      "guestId": "01K2G3TF115QV1EVDD7ABKYDCQ",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF12V7WFPM3RM9G7EFPC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KDKYS358YZ1HEXYJW",
+      "guestId": "01K2G3TF11XK2VWGQ7GAC8A6BD",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": false
+    },
+    {
+      "id": "01K2G3TF18K2PAVP5Z5STZYZSC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KASPRCQSK9Z1D35MF",
+      "guestId": "01K2G3TF126MF33MWQVMW33PAH",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    },
+    {
+      "id": "01K2G3TF18JAHZ61QSDW90WDMN",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KJCRANG2P50TZG047",
+      "guestId": "01K2G3TF12AVV90P0ZAA9MQ8X3",
+      "checkInDate": "2025-08-12T16:00:00.000Z",
+      "checkOutDate": "2025-08-19T16:00:00.000Z",
+      "primaryGuest": true
+    }
+  ],
+  "delegations": [
+    {
+      "id": "01K2G3TF12CBVC2VK971XNXK0C",
+      "granterGuestId": "01K2G3TF0K54V0JTD57SX3VAZQ",
+      "granteeGuestId": "01K2G3TF0NP2EQ1GK7KWHP6Y19",
+      "scope": "MANAGE",
+      "cabinId": "01K2G3TF0GGJTV36C9XACXM4QK",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "expiresAt": null
+    }
+  ],
+  "venues": [
+    {
+      "id": "01K2G3TF08VWQXBB7RCJXDKGG7",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "type": "restaurant",
+      "name": "Aurora",
+      "deck": 7
+    },
+    {
+      "id": "01K2G3TF0870XSQXSP4RG2DZBX",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "type": "restaurant",
+      "name": "Celeste",
+      "deck": 8
+    },
+    {
+      "id": "01K2G3TF082TR6VXC5P9CRJ12Y",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "type": "restaurant",
+      "name": "Luna Buffet",
+      "deck": 14
+    },
+    {
+      "id": "01K2G3TF094JMQ0JZV149FJ3Q7",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "type": "theater",
+      "name": "Orion Theater",
+      "deck": 5
+    },
+    {
+      "id": "01K2G3TF09W3XG87G3H501R4F3",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "type": "spa",
+      "name": "Zen Spa",
+      "deck": 12
+    },
+    {
+      "id": "01K2G3TF09PX7MSD5GKRDPQGY0",
+      "shipId": "01K2G3TF07FWTC5WRNH888778E",
+      "type": "activity",
+      "name": "Constellation Hall",
+      "deck": 6
+    }
+  ],
+  "products": [
+    {
+      "id": "01K2G3TF128EG8E6S6J25YGYTR",
+      "type": "dining",
+      "venueId": "01K2G3TF08VWQXBB7RCJXDKGG7",
+      "title": "Aurora",
+      "description": "A la carte",
+      "rules": {
+        "windowStartDaysBefore": 10,
+        "perGuestLimit": 1,
+        "cancellableUntilHoursBefore": 2
+      }
+    },
+    {
+      "id": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "type": "dining",
+      "venueId": "01K2G3TF0870XSQXSP4RG2DZBX",
+      "title": "Celeste",
+      "description": "Steakhouse",
+      "rules": {
+        "windowStartDaysBefore": 10,
+        "perGuestLimit": 1
+      }
+    },
+    {
+      "id": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "type": "dining",
+      "venueId": "01K2G3TF082TR6VXC5P9CRJ12Y",
+      "title": "Luna Buffet",
+      "description": "Casual",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    },
+    {
+      "id": "01K2G3TF12018N48ZCM7D7TTPS",
+      "type": "show",
+      "venueId": "01K2G3TF094JMQ0JZV149FJ3Q7",
+      "title": "Starry Night Revue",
+      "description": "Evening show",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    },
+    {
+      "id": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "type": "show",
+      "venueId": "01K2G3TF094JMQ0JZV149FJ3Q7",
+      "title": "Captain's Gala",
+      "description": "Formal night",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    },
+    {
+      "id": "01K2G3TF13SBMA741VE8J4E1F1",
+      "type": "excursion",
+      "title": "Cozumel Reef Snorkel",
+      "description": "Half-day snorkel",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    },
+    {
+      "id": "01K2G3TF13N1QHP87A19PBWJFX",
+      "type": "excursion",
+      "title": "Grand Cayman Stingray City",
+      "description": "Boat tour",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    },
+    {
+      "id": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "type": "spa",
+      "venueId": "01K2G3TF09W3XG87G3H501R4F3",
+      "title": "Zen Spa Massage",
+      "description": "50-minute Swedish massage",
+      "rules": {
+        "windowStartDaysBefore": 5,
+        "cancellableUntilHoursBefore": 4
+      }
+    },
+    {
+      "id": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "type": "spa",
+      "venueId": "01K2G3TF09W3XG87G3H501R4F3",
+      "title": "Thermal Suite Access",
+      "description": "Day pass to thermal suite",
+      "rules": {
+        "windowStartDaysBefore": 5
+      }
+    },
+    {
+      "id": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "type": "activity",
+      "venueId": "01K2G3TF09PX7MSD5GKRDPQGY0",
+      "title": "Trivia Night",
+      "description": "Team trivia contest",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    },
+    {
+      "id": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "type": "activity",
+      "venueId": "01K2G3TF09PX7MSD5GKRDPQGY0",
+      "title": "Salsa Dance Class",
+      "description": "Beginner dance class",
+      "rules": {
+        "windowStartDaysBefore": 0
+      }
+    }
+  ],
+  "timeslots": [
+    {
+      "id": "01K2G3TF13881V6XC7S79Z1HQ2",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T22:00:00.000Z",
+      "end": "2025-08-13T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF1363Q45Z6ZRQ4J4R4D",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T22:00:00.000Z",
+      "end": "2025-08-14T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF13X7QG6H38EDXY59SY",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T22:00:00.000Z",
+      "end": "2025-08-15T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF13S158XZMCVKPHNM3W",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T22:00:00.000Z",
+      "end": "2025-08-16T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF13MQWG3GQF9BZS4HBZ",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T22:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14YQQE70PB2X73W4SN",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T22:00:00.000Z",
+      "end": "2025-08-18T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14TQT2RMEK2WGZ4XE2",
+      "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T22:00:00.000Z",
+      "end": "2025-08-19T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14064RDGJH8E7BDEX2",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T22:00:00.000Z",
+      "end": "2025-08-13T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14BQKCRKEQTQC5JNB6",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T22:00:00.000Z",
+      "end": "2025-08-14T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF142E670QWNZW7X45W5",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T22:00:00.000Z",
+      "end": "2025-08-15T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14FF7K9ZH98K0JEB0X",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T22:00:00.000Z",
+      "end": "2025-08-16T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF144D5R52XAAG1S6YEB",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T22:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14TD0370GZ61798H3F",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T22:00:00.000Z",
+      "end": "2025-08-18T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF141SXGJE5XAJP01B69",
+      "productId": "01K2G3TF128JZ1XW47MR3NRDFG",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T22:00:00.000Z",
+      "end": "2025-08-19T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14MYHH0Y433KWYPC7D",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T22:00:00.000Z",
+      "end": "2025-08-13T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14VAGGZE8A3MG5CX48",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T22:00:00.000Z",
+      "end": "2025-08-14T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14MCTSPW7XC9ARK0HG",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T22:00:00.000Z",
+      "end": "2025-08-15T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14NV6WC5JS7QD3DFN8",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T22:00:00.000Z",
+      "end": "2025-08-16T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14M5FR027JEQ606D3Y",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T22:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14E29EGC0G707PSK81",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T22:00:00.000Z",
+      "end": "2025-08-18T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF14RJMT4W9CE46M0N3H",
+      "productId": "01K2G3TF125R5W4H7P3RWYWWFC",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T22:00:00.000Z",
+      "end": "2025-08-19T00:00:00.000Z",
+      "capacity": 40
+    },
+    {
+      "id": "01K2G3TF1401PG4A7681RP0PN7",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T22:00:00.000Z",
+      "end": "2025-08-13T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF144CD8DBQN49P4XNM3",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T22:00:00.000Z",
+      "end": "2025-08-14T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15GGN8C4202MS9CKP2",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T22:00:00.000Z",
+      "end": "2025-08-15T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15F5NA7JY5C5H5WQ2G",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T22:00:00.000Z",
+      "end": "2025-08-16T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15QPGMS61HZER3R3Y3",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T22:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15KV2HQ3Z0VKFQ5PEH",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T22:00:00.000Z",
+      "end": "2025-08-18T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15M87F47D5PDTP1E62",
+      "productId": "01K2G3TF12018N48ZCM7D7TTPS",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T22:00:00.000Z",
+      "end": "2025-08-19T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15EPRSAA88393AYMH5",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T22:00:00.000Z",
+      "end": "2025-08-13T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF158EKBNA5B2PWMC8F6",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T22:00:00.000Z",
+      "end": "2025-08-14T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15DY6RMP8BT11SJCAZ",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T22:00:00.000Z",
+      "end": "2025-08-15T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15Q8TYXH0RDW8KQJZR",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T22:00:00.000Z",
+      "end": "2025-08-16T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15DZ3ZK24F3S6N20N4",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T22:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15Z6P1FN99WQEJ6YQD",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T22:00:00.000Z",
+      "end": "2025-08-18T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF15CFP1EFT1TYWP4XBQ",
+      "productId": "01K2G3TF13RNGG0ZA3ZC18DVGZ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T22:00:00.000Z",
+      "end": "2025-08-19T00:00:00.000Z",
+      "capacity": 200
+    },
+    {
+      "id": "01K2G3TF150P03CV19ENBJ0Y2V",
+      "productId": "01K2G3TF13SBMA741VE8J4E1F1",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T22:00:00.000Z",
+      "end": "2025-08-15T00:00:00.000Z",
+      "capacity": 25
+    },
+    {
+      "id": "01K2G3TF168M7034SPJP1D9BG2",
+      "productId": "01K2G3TF13N1QHP87A19PBWJFX",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T22:00:00.000Z",
+      "end": "2025-08-17T00:00:00.000Z",
+      "capacity": 25
+    },
+    {
+      "id": "01K2G3TF16728SDS5D4NYTW623",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T18:00:00.000Z",
+      "end": "2025-08-12T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF16X4E2MTCPW7YT6V1R",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T18:00:00.000Z",
+      "end": "2025-08-13T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF16GVM6N1K588C4WWEG",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T18:00:00.000Z",
+      "end": "2025-08-14T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF163ZQN94WBSN0EQC16",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T18:00:00.000Z",
+      "end": "2025-08-15T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF16EQCTTBP4W1BBJ2SD",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T18:00:00.000Z",
+      "end": "2025-08-16T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF163PQ0MEY8BN2HBEFX",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T18:00:00.000Z",
+      "end": "2025-08-17T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF161S4DZWPPFK1K8RDR",
+      "productId": "01K2G3TF13N91VG6HYR1PGD5N5",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T18:00:00.000Z",
+      "end": "2025-08-18T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF16D3QT8QPNT325N1N2",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T18:00:00.000Z",
+      "end": "2025-08-12T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF166P29TY3BFB3KK7CG",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T18:00:00.000Z",
+      "end": "2025-08-13T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF16G0FSPJPF9XAV1DJP",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T18:00:00.000Z",
+      "end": "2025-08-14T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF165X3QKGDY1EM1GNAE",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T18:00:00.000Z",
+      "end": "2025-08-15T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF18K6SB4THPWB3WVDXT",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T18:00:00.000Z",
+      "end": "2025-08-16T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF18D7SYHGS05X2KBE62",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T18:00:00.000Z",
+      "end": "2025-08-17T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF18RMGFZ8V1SZ51BERB",
+      "productId": "01K2G3TF13ADXM39EWB6VF2DMY",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T18:00:00.000Z",
+      "end": "2025-08-18T19:00:00.000Z",
+      "capacity": 12
+    },
+    {
+      "id": "01K2G3TF18HNT0WYEFDVPJCTHX",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T14:00:00.000Z",
+      "end": "2025-08-12T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18Z1E0EJJ8CBB29QP1",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T14:00:00.000Z",
+      "end": "2025-08-13T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18CG4J9AWQDNMJCDF3",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T14:00:00.000Z",
+      "end": "2025-08-14T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF1810VW5BWGGW4WZWC3",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T14:00:00.000Z",
+      "end": "2025-08-15T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18QTZNJDGKSQG4D3T0",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T14:00:00.000Z",
+      "end": "2025-08-16T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF187QD5BMXH1DHX4F0X",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T14:00:00.000Z",
+      "end": "2025-08-17T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18DK83T5CMHRYD1RVD",
+      "productId": "01K2G3TF13NYXZXRSG3DQW6N7F",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T14:00:00.000Z",
+      "end": "2025-08-18T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF185FP6K5VJS15EHRJ9",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 1,
+      "start": "2025-08-12T14:00:00.000Z",
+      "end": "2025-08-12T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF188KRC38YMBKX7P376",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 2,
+      "start": "2025-08-13T14:00:00.000Z",
+      "end": "2025-08-13T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18CRFBTED0NHN02GCP",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 3,
+      "start": "2025-08-14T14:00:00.000Z",
+      "end": "2025-08-14T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18JKG1QVPRMMNC65RV",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 4,
+      "start": "2025-08-15T14:00:00.000Z",
+      "end": "2025-08-15T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF180J8ZGM8KH1NFWFV9",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 5,
+      "start": "2025-08-16T14:00:00.000Z",
+      "end": "2025-08-16T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18KGXSV0Z2JHQP1PAG",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 6,
+      "start": "2025-08-17T14:00:00.000Z",
+      "end": "2025-08-17T15:00:00.000Z",
+      "capacity": 50
+    },
+    {
+      "id": "01K2G3TF18B0AR30S5RT14JHJA",
+      "productId": "01K2G3TF130Z1P11H0R1H9ZKQQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "itineraryDayNumber": 7,
+      "start": "2025-08-18T14:00:00.000Z",
+      "end": "2025-08-18T15:00:00.000Z",
+      "capacity": 50
+    }
+  ],
+  "bookings": [
+    {
+      "id": "01K2G3TF18FMHARCCRFSF3CT5Q",
+      "guestId": "01K2G3TF0K54V0JTD57SX3VAZQ",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0GGJTV36C9XACXM4QK",
+      "status": "confirmed",
+      "createdAt": "2025-08-12T21:43:44.424Z",
+      "items": [
+        {
+          "id": "01K2G3TF183JHTXYYJW8BKDEF6",
+          "bookingId": "01K2G3TF18FMHARCCRFSF3CT5Q",
+          "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+          "timeslotId": "01K2G3TF13881V6XC7S79Z1HQ2",
+          "quantity": 2,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0
+    },
+    {
+      "id": "01K2G4DR6EB2V3TN61828NF13T",
+      "guestId": "01K2G3TF126MF33MWQVMW33PAH",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KASPRCQSK9Z1D35MF",
+      "status": "confirmed",
+      "createdAt": "2025-08-12T21:54:16.398Z",
+      "items": [
+        {
+          "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+          "timeslotId": "01K2G3TF13881V6XC7S79Z1HQ2",
+          "quantity": 1,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0
+    },
+    {
+      "id": "01K2G4XGMA226MM8NY4DRHQ0H3",
+      "guestId": "01K2G3TF126MF33MWQVMW33PAH",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0KASPRCQSK9Z1D35MF",
+      "status": "confirmed",
+      "createdAt": "2025-08-12T22:02:52.938Z",
+      "items": [
+        {
+          "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+          "timeslotId": "01K2G3TF1363Q45Z6ZRQ4J4R4D",
+          "quantity": 1,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0
+    },
+    {
+      "id": "01K2G65TNDCECTABKB24QT4YGC",
+      "guestId": "01K2G3TF0SDT3BABSMP31FM8YR",
+      "sailingId": "01K2G3TF08YMQSW6EA4SJEAEY0",
+      "cabinId": "01K2G3TF0HKXZH3G3CCYN87S2H",
+      "status": "cancelled",
+      "createdAt": "2025-08-12T22:24:53.934Z",
+      "items": [
+        {
+          "productId": "01K2G3TF128EG8E6S6J25YGYTR",
+          "timeslotId": "01K2G3TF13881V6XC7S79Z1HQ2",
+          "quantity": 2,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0,
+      "attendeeGuestIds": [
+        "01K2G3TF0SM5HM7ZMYEVKYPYVH",
+        "01K2G3TF0SDT3BABSMP31FM8YR"
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "id": "01K2G3TF18NSJJ26KAGG4X784V",
+      "bookingId": "01K2G3TF18FMHARCCRFSF3CT5Q",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "createdAt": "2025-08-12T21:43:44.425Z"
+    },
+    {
+      "bookingId": "01K2G4DR6EB2V3TN61828NF13T",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2G4DR6HPDM10QEJ68T5FZFJ",
+      "createdAt": "2025-08-12T21:54:16.401Z"
+    },
+    {
+      "bookingId": "01K2G4XGMA226MM8NY4DRHQ0H3",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2G4XGMDQT3J5DZ8B0BG1FMF",
+      "createdAt": "2025-08-12T22:02:52.941Z"
+    },
+    {
+      "bookingId": "01K2G65TNDCECTABKB24QT4YGC",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2G65TNG2S6RZPVZFWJJFKCZ",
+      "createdAt": "2025-08-12T22:24:53.936Z"
+    }
+  ],
+  "users": [
+    {
+      "id": "01K2G3TF0MKSVY3NG145FAP9M5",
+      "email": "guest01@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0K54V0JTD57SX3VAZQ"
+    },
+    {
+      "id": "01K2G3TF0NXVHYRPZFJAZBS17N",
+      "email": "guest02@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0NP2EQ1GK7KWHP6Y19"
+    },
+    {
+      "id": "01K2G3TF0PWYDBJ7J5BST15ZE4",
+      "email": "guest03@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0NN2ETNAWYW6ZK3VTZ"
+    },
+    {
+      "id": "01K2G3TF0PWCD6DMXNSEWW99VS",
+      "email": "guest04@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0P8F54ZQVW063V44HM"
+    },
+    {
+      "id": "01K2G3TF0PWJKWRYE6AGPHF5S2",
+      "email": "guest05@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0PVDH16VJ15J9PRJ1D"
+    },
+    {
+      "id": "01K2G3TF0PFZNF9HBMA76KR9K9",
+      "email": "guest06@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0PP6ASQYPN1JHRX93S"
+    },
+    {
+      "id": "01K2G3TF0PPSY0A8X7PT22V2TB",
+      "email": "guest07@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0PBKMZRBMYCBE91E7H"
+    },
+    {
+      "id": "01K2G3TF0Q5A2ZJXK1TSZ1KXQ8",
+      "email": "guest08@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0PR6WJTXJCZP2C3VBF"
+    },
+    {
+      "id": "01K2G3TF0QVGANXB7M01JJ6JQJ",
+      "email": "guest09@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0QRTPDRTJ3WE5G5PKS"
+    },
+    {
+      "id": "01K2G3TF0R72Y1WQH98KZQ6039",
+      "email": "guest10@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0R92AZN3EVRPRTX2QY"
+    },
+    {
+      "id": "01K2G3TF0R9626CZYAM12APNZG",
+      "email": "guest11@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0RTJXN62EHYJFN0V93"
+    },
+    {
+      "id": "01K2G3TF0RC8CSJ7RVGP9W6XR2",
+      "email": "guest12@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0R0V5W5X81QF22AREC"
+    },
+    {
+      "id": "01K2G3TF0RPTP7QRQ6ATYFYWW5",
+      "email": "guest13@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0RCA9BA977FBDZY7F0"
+    },
+    {
+      "id": "01K2G3TF0RMTCVNRXY30NJCKBP",
+      "email": "guest14@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0RWCJWPSVD59NYRZWK"
+    },
+    {
+      "id": "01K2G3TF0SBVHKHNMCFD3NFS5R",
+      "email": "guest15@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0SM5HM7ZMYEVKYPYVH"
+    },
+    {
+      "id": "01K2G3TF0SDMTMD0MKC73BGXCW",
+      "email": "guest16@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0SDT3BABSMP31FM8YR"
+    },
+    {
+      "id": "01K2G3TF0SHM3Y79FZ7HZKA67P",
+      "email": "guest17@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0S99ND7F7D0DD42C2T"
+    },
+    {
+      "id": "01K2G3TF0SQASPVKH4JGY8N3Y1",
+      "email": "guest18@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0SENW7S2WQNT3D9A8P"
+    },
+    {
+      "id": "01K2G3TF0SPTKVK309JFACKNXP",
+      "email": "guest19@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0SD00AHZBN44YNF5ZG"
+    },
+    {
+      "id": "01K2G3TF0S68D5JW4G7P0FA2YS",
+      "email": "guest20@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0SVBQR3EMTD3XJWRQ9"
+    },
+    {
+      "id": "01K2G3TF0TDVG00M2Q7QCD6MCT",
+      "email": "guest21@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0SM19C3A7S2ZKRPH91"
+    },
+    {
+      "id": "01K2G3TF0TGXJ35P3QJH95TBMP",
+      "email": "guest22@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0TJCH0XAB4T7NF1ZHX"
+    },
+    {
+      "id": "01K2G3TF0TY5MN7N4J9FY7FAVE",
+      "email": "guest23@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0T5FTX5MGQJNA9A5FQ"
+    },
+    {
+      "id": "01K2G3TF0TH53FB5QRZWA69ZDM",
+      "email": "guest24@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0TZFM8XV4WDFS5BD2Y"
+    },
+    {
+      "id": "01K2G3TF0T8HWXF0TZGVRE0J6H",
+      "email": "guest25@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0TECEV5KC90MKWCDKJ"
+    },
+    {
+      "id": "01K2G3TF0T9N06J0ZXD81H0ENZ",
+      "email": "guest26@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0TJB6V4YWBB51WCCMW"
+    },
+    {
+      "id": "01K2G3TF0V2KTV4RNAGCBGEXGC",
+      "email": "guest27@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0TNRGHRDBGHWY4DPVN"
+    },
+    {
+      "id": "01K2G3TF0VJECK9759MG0VSKNZ",
+      "email": "guest28@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0V5VA7106HYMMAT5V9"
+    },
+    {
+      "id": "01K2G3TF0VVNCRQGQY69CNWA9A",
+      "email": "guest29@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0VYPR67R92MXVKQXX2"
+    },
+    {
+      "id": "01K2G3TF0V3TRTGY14777S46K2",
+      "email": "guest30@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0VPJGVGP93GWANJ9CH"
+    },
+    {
+      "id": "01K2G3TF0VJSA9T3VBW5858XKM",
+      "email": "guest31@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0V4YR6X3NGC2CV2E2V"
+    },
+    {
+      "id": "01K2G3TF0VX6A7ZBD0JM05KXVQ",
+      "email": "guest32@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0VX7K0WTQ4XY87070S"
+    },
+    {
+      "id": "01K2G3TF0WB5SHTYKSAK9ZNP5R",
+      "email": "guest33@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0VDDHNX41DVCJYCPDY"
+    },
+    {
+      "id": "01K2G3TF0WZVA6498992MYP6ZE",
+      "email": "guest34@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0WQD2F60AGSG4TBKV1"
+    },
+    {
+      "id": "01K2G3TF0WR6QPWJMSDM6VQGJ6",
+      "email": "guest35@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0W1YACWQ6Y91BB6837"
+    },
+    {
+      "id": "01K2G3TF0WWS3GNRZD0NM2RE29",
+      "email": "guest36@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0WKCGXJ5T43F07Q7AE"
+    },
+    {
+      "id": "01K2G3TF0WA0AP8HEW95X622GJ",
+      "email": "guest37@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0WVNWEPHR7DGQ3VSR5"
+    },
+    {
+      "id": "01K2G3TF0WYQNRQ20HFBRF1E5F",
+      "email": "guest38@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0W8W5T5GRHM7XF4X56"
+    },
+    {
+      "id": "01K2G3TF0WCAC3DPS703TZPWJT",
+      "email": "guest39@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0W5K9GH1T8C9HNMJ7N"
+    },
+    {
+      "id": "01K2G3TF0X5M98EH8NC39020E1",
+      "email": "guest40@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0X0RM6BF0AM7TADGYZ"
+    },
+    {
+      "id": "01K2G3TF0YDD0STP9KSES8CFAW",
+      "email": "guest41@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0Y6JXK1C5HPZB70AYS"
+    },
+    {
+      "id": "01K2G3TF0YYFWSWCCTXJK54SFM",
+      "email": "guest42@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0Y820RAVAC690NZN1P"
+    },
+    {
+      "id": "01K2G3TF0YG67RBNVF5TN29CT2",
+      "email": "guest43@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0YAFN7SWWVDETMDD80"
+    },
+    {
+      "id": "01K2G3TF0YCS79A1H7PPH4ADKW",
+      "email": "guest44@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0YVVAR4Q28Y7RH7D66"
+    },
+    {
+      "id": "01K2G3TF0YP2YNBW618BJT4J3B",
+      "email": "guest45@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0YCY0JNBYMWX8NNB3C"
+    },
+    {
+      "id": "01K2G3TF0Y9ZZKGSSH7958QWYG",
+      "email": "guest46@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0Y8Q26ZQ5VDF2PHCD3"
+    },
+    {
+      "id": "01K2G3TF0ZSWKJPKSHMFCSPN8Q",
+      "email": "guest47@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0Z697N7701MFKXX91E"
+    },
+    {
+      "id": "01K2G3TF0ZB8BTKA5YAYW37JP0",
+      "email": "guest48@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0Z2P76CDNCADM667S6"
+    },
+    {
+      "id": "01K2G3TF0ZMKQJRVTRJ2QRX3GK",
+      "email": "guest49@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0ZSWDSV0HYDNHPAJA9"
+    },
+    {
+      "id": "01K2G3TF0ZEVYW1V12FN954WAM",
+      "email": "guest50@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0ZF6QC868VT3M0W68Z"
+    },
+    {
+      "id": "01K2G3TF1022EB05HFC0JF4P9K",
+      "email": "guest51@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF10W0VGY9HHPBS64APH"
+    },
+    {
+      "id": "01K2G3TF10KF21ZMTM2TMKMYD7",
+      "email": "guest52@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF10KRJFX8PE7H6Z1QGJ"
+    },
+    {
+      "id": "01K2G3TF10BGTMT7SKPJR59GF8",
+      "email": "guest53@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF109VC9F90DXTFYHPG4"
+    },
+    {
+      "id": "01K2G3TF1065M9QMNSF3QFAAFR",
+      "email": "guest54@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF107FMEA26N1TH80H1Y"
+    },
+    {
+      "id": "01K2G3TF11E071ZY9SAGHS31XE",
+      "email": "guest55@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF113ZN4HE1WG6RBW26S"
+    },
+    {
+      "id": "01K2G3TF11TXAXRCN8ZGWES6VA",
+      "email": "guest56@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF11RD989TBMFMJZ2HS1"
+    },
+    {
+      "id": "01K2G3TF11E3BMTAH53FQCVKTW",
+      "email": "guest57@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF110YBSKPE75EH07CJC"
+    },
+    {
+      "id": "01K2G3TF117CGNFK2PM0Y9C7G4",
+      "email": "guest58@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF11XZ2GF5PQS443N539"
+    },
+    {
+      "id": "01K2G3TF11CZFYNN206HASRZAQ",
+      "email": "guest59@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF115QV1EVDD7ABKYDCQ"
+    },
+    {
+      "id": "01K2G3TF1282W5W1PEXQPX3X0Z",
+      "email": "guest60@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF11XK2VWGQ7GAC8A6BD"
+    },
+    {
+      "id": "01K2G3TF12Q817A6Q4JN61QW8A",
+      "email": "alice@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0K54V0JTD57SX3VAZQ"
+    },
+    {
+      "id": "01K2G3TF128DXPARP6813N0V3J",
+      "email": "bob@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0NP2EQ1GK7KWHP6Y19"
+    },
+    {
+      "id": "01K2G3TF129R96VRHWSJ2BYZKH",
+      "email": "carla@example.com",
+      "role": "guest",
+      "guestId": "01K2G3TF0NN2ETNAWYW6ZK3VTZ"
+    },
+    {
+      "id": "01K2G3TF12F36281AZJJE11F7P",
+      "email": "crew@example.com",
+      "role": "crew",
+      "guestId": "01K2G3TF12AVV90P0ZAA9MQ8X3"
+    },
+    {
+      "id": "01K2G3TF12S78XFGGH952R8HHX",
+      "email": "admin@example.com",
+      "role": "admin",
+      "guestId": "01K2G3TF126MF33MWQVMW33PAH"
+    }
+  ]
+}

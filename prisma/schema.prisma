@@ -1,0 +1,293 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Enums
+enum Role {
+  guest
+  cabin_manager
+  crew
+  admin
+}
+
+enum VenueType {
+  restaurant
+  theater
+  spa
+  activity
+}
+
+enum ProductType {
+  dining
+  show
+  excursion
+  spa
+  activity
+}
+
+enum BookingStatus {
+  held
+  confirmed
+  cancelled
+}
+
+enum PaymentMethod {
+  demo
+}
+
+enum PaymentStatus {
+  authorized
+  captured
+  voided
+}
+
+enum DelegationScope {
+  VIEW
+  BOOK
+  MANAGE
+}
+
+// Models
+model Ship {
+  id     String  @id
+  name   String
+  code   String  @unique
+  decks  Int
+  venues Venue[]
+  cabins Cabin[]
+  sailings Sailing[]
+}
+
+model Venue {
+  id          String    @id
+  shipId      String
+  type        VenueType
+  name        String
+  deck        Int
+  description String?
+
+  ship Ship @relation(fields: [shipId], references: [id])
+
+  products Product[]
+
+  @@index([shipId])
+}
+
+model Sailing {
+  id            String          @id
+  shipId        String
+  startDate     DateTime
+  endDate       DateTime
+  itineraryDays ItineraryDay[]
+
+  ship Ship @relation(fields: [shipId], references: [id])
+  timeslots Timeslot[]
+  cabinAssignments CabinAssignment[]
+  bookings Booking[]
+
+  @@index([shipId])
+}
+
+model ItineraryDay {
+  id        String   @id
+  sailingId String
+  dayNumber Int
+  date      DateTime
+  portName  String
+  arrivalTime   String?
+  departureTime String?
+  notes     String?
+
+  sailing Sailing @relation(fields: [sailingId], references: [id])
+
+  @@index([sailingId, dayNumber])
+}
+
+model Cabin {
+  id            String  @id
+  shipId        String
+  number        String
+  deck          Int
+  category      String
+  maxOccupancy  Int
+
+  ship Ship @relation(fields: [shipId], references: [id])
+  assignments CabinAssignment[]
+
+  @@index([shipId])
+  @@unique([shipId, number])
+}
+
+model Guest {
+  id           String  @id
+  email        String  @unique
+  firstName    String
+  lastName     String
+  dateOfBirth  DateTime
+  loyaltyTier  String?
+  photoUrl     String?
+  phone        String?
+
+  assignments CabinAssignment[]
+  bookings    Booking[]
+  grantedDelegations Delegation[] @relation("granter")
+  receivedDelegations Delegation[] @relation("grantee")
+  auditLogs AuditLog[] @relation("auditActor")
+}
+
+model CabinAssignment {
+  id           String   @id
+  sailingId    String
+  cabinId      String
+  guestId      String
+  checkInDate  DateTime
+  checkOutDate DateTime
+  primaryGuest Boolean
+
+  sailing Sailing @relation(fields: [sailingId], references: [id])
+  cabin   Cabin   @relation(fields: [cabinId], references: [id])
+  guest   Guest   @relation(fields: [guestId], references: [id])
+
+  @@index([sailingId])
+  @@index([cabinId])
+  @@index([guestId])
+  @@unique([sailingId, cabinId, guestId])
+}
+
+model Delegation {
+  id             String          @id
+  granterGuestId String
+  granteeGuestId String
+  scope          DelegationScope
+  cabinId        String?
+  sailingId      String?
+  expiresAt      DateTime?
+
+  granter Guest @relation("granter", fields: [granterGuestId], references: [id])
+  grantee Guest @relation("grantee", fields: [granteeGuestId], references: [id])
+  cabin   Cabin? @relation(fields: [cabinId], references: [id])
+  sailing Sailing? @relation(fields: [sailingId], references: [id])
+
+  @@index([granterGuestId])
+  @@index([granteeGuestId])
+  @@index([cabinId])
+  @@index([sailingId])
+}
+
+model Product {
+  id          String      @id
+  type        ProductType
+  venueId     String?
+  title       String
+  description String
+  rules       Json
+
+  venue Venue? @relation(fields: [venueId], references: [id])
+  timeslots Timeslot[]
+  bookingItems BookingItem[]
+
+  @@index([venueId])
+}
+
+model Timeslot {
+  id                  String   @id
+  productId           String
+  sailingId           String
+  itineraryDayNumber  Int
+  start               DateTime
+  end                 DateTime
+  capacity            Int
+
+  product Product @relation(fields: [productId], references: [id])
+  sailing Sailing @relation(fields: [sailingId], references: [id])
+  bookingItems BookingItem[]
+
+  @@index([productId])
+  @@index([sailingId])
+  @@index([itineraryDayNumber])
+  @@index([start])
+  @@index([productId, sailingId, itineraryDayNumber, start])
+}
+
+model Booking {
+  id         String         @id
+  guestId    String
+  sailingId  String
+  cabinId    String
+  status     BookingStatus
+  createdAt  DateTime       @default(now())
+  totalCents Int
+
+  guest   Guest   @relation(fields: [guestId], references: [id])
+  sailing Sailing @relation(fields: [sailingId], references: [id])
+  cabin   Cabin   @relation(fields: [cabinId], references: [id])
+  items   BookingItem[]
+  payments Payment[]
+
+  @@index([guestId])
+  @@index([sailingId])
+  @@index([guestId, sailingId])
+}
+
+model BookingItem {
+  id           String   @id
+  bookingId    String
+  productId    String
+  timeslotId   String
+  quantity     Int
+  unitPriceCents Int
+
+  booking  Booking @relation(fields: [bookingId], references: [id])
+  product  Product @relation(fields: [productId], references: [id])
+  timeslot Timeslot @relation(fields: [timeslotId], references: [id])
+
+  @@index([bookingId])
+  @@index([productId])
+  @@index([timeslotId])
+}
+
+model Payment {
+  id         String        @id
+  bookingId  String
+  amountCents Int
+  method     PaymentMethod
+  status     PaymentStatus
+  createdAt  DateTime      @default(now())
+
+  booking Booking @relation(fields: [bookingId], references: [id])
+
+  @@index([bookingId])
+}
+
+model AuditLog {
+  id          String  @id
+  actorGuestId String?
+  actorRole   Role
+  action      String
+  entityType  String
+  entityId    String
+  at          DateTime @default(now())
+  meta        Json?
+
+  actor Guest? @relation("auditActor", fields: [actorGuestId], references: [id])
+
+  @@index([actorGuestId])
+  @@index([entityType, entityId])
+}
+
+model UserAccount {
+  id      String @id
+  email   String @unique
+  role    Role
+  guestId String?
+
+  guest Guest? @relation(fields: [guestId], references: [id])
+
+  @@index([guestId])
+}
+

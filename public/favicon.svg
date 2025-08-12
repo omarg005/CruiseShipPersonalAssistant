@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="sea" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3DB3FF"/>
+      <stop offset="100%" stop-color="#0C74C9"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" fill="none"/>
+  <!-- Waves -->
+  <path d="M0 48c6 0 6-4 12-4s6 4 12 4 6-4 12-4 6 4 12 4 6-4 12-4v12H0V48z" fill="url(#sea)"/>
+  <!-- Ship hull -->
+  <path d="M10 38h32l6 8H14z" fill="#1F2937"/>
+  <!-- Deck -->
+  <rect x="16" y="28" width="26" height="10" rx="2" fill="#E5E7EB"/>
+  <!-- Bridge -->
+  <rect x="22" y="22" width="14" height="6" rx="2" fill="#FFFFFF"/>
+  <!-- Windows -->
+  <g fill="#0EA5E9">
+    <rect x="18" y="31" width="4" height="3" rx="1"/>
+    <rect x="24" y="31" width="4" height="3" rx="1"/>
+    <rect x="30" y="31" width="4" height="3" rx="1"/>
+    <rect x="36" y="31" width="4" height="3" rx="1"/>
+  </g>
+  <!-- Funnel -->
+  <rect x="28" y="18" width="8" height="4" rx="1" fill="#EF4444"/>
+  <!-- Smoke -->
+  <circle cx="34" cy="15" r="2" fill="#9CA3AF"/>
+  <circle cx="30" cy="13" r="1.5" fill="#9CA3AF"/>
+</svg>
+
