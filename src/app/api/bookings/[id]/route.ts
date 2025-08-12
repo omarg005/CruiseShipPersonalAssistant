@@ -5,7 +5,7 @@ import { NextResponse } from "next/server";
 
 export const runtime = 'nodejs';
 
-export async function PATCH(req: Request, { params }: { params: { id: string } }) {
+export async function PATCH(req: Request, { params }: any) {
   const session = await auth();
   const repo = getRepo();
   const email = session?.user?.email || undefined;
