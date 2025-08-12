@@ -73,6 +73,30 @@ export async function GET() {
           responses: { 200: { description: "OK", content: { "application/json": { examples: { success: { value: [{ id: "01SLOT...", start: "2025-08-12T22:00:00Z", remaining: 10 }] } } } } } },
         },
       },
+      "/api/timeslots/lookup": {
+        get: {
+          summary: "Lookup timeslots by IDs",
+          parameters: [
+            { name: "ids", in: "query", required: true, description: "Comma-separated timeslot IDs", schema: { type: "string" } },
+          ],
+          responses: {
+            200: {
+              description: "OK",
+              content: {
+                "application/json": {
+                  examples: {
+                    success: {
+                      value: [
+                        { id: "01SLOT...", productId: "01PROD...", sailingId: "01SAIL...", itineraryDayNumber: 1, start: "2025-08-12T22:00:00Z", end: "2025-08-13T00:00:00Z", capacity: 40 },
+                      ],
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
       "/api/bookings": {
         get: {
           summary: "My bookings",
@@ -175,6 +199,7 @@ export async function GET() {
             status: { type: "string", enum: ["held", "confirmed", "cancelled"] },
             createdAt: { type: "string" },
             totalCents: { type: "integer" },
+            attendeeGuestIds: { type: "array", items: { type: "string" } },
             items: {
               type: "array",
               items: {
