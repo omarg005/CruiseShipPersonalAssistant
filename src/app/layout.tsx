@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./providers";
 import Link from "next/link";
 import NavAuth from "@/components/NavAuth";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Providers>
+          <div className="min-h-screen flex flex-col">
           <header className="nautical-header">
             <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
               <div className="flex items-center gap-3">
@@ -51,12 +53,12 @@ export default function RootLayout({
               </nav>
             </div>
           </header>
-          <main className="p-4 max-w-6xl mx-auto">
+          <main className="p-4 max-w-6xl mx-auto flex-1">
             {children}
           </main>
-          <footer className="max-w-6xl mx-auto px-4 pb-6 text-xs text-slate-500">
-            © {new Date().getFullYear()} MV Horizon · Cruise Onboard Booking Demo
-          </footer>
+          <div className="h-16" />
+          <Footer />
+          </div>
         </Providers>
       </body>
     </html>
