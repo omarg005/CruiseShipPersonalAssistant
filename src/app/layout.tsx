@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
 import Link from "next/link";
+import NavAuth from "@/components/NavAuth";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -30,33 +31,33 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="nautical-header">
-          <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-            <div className="flex items-center gap-3">
-              <span className="nautical-badge">HZN</span>
-              <div className="text-sm">MV Horizon</div>
+        <Providers>
+          <header className="nautical-header">
+            <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
+              <div className="flex items-center gap-3">
+                <span className="nautical-badge">HZN</span>
+                <div className="text-sm">MV Horizon</div>
+              </div>
+              <nav className="flex gap-4 text-sm flex-wrap" aria-label="Primary">
+                <Link href="/" className="nautical-link">Home</Link>
+                <Link href="/dashboard" className="nautical-link">Dashboard</Link>
+                <Link href="/itinerary" className="nautical-link">Itinerary</Link>
+                <Link href="/catalog" className="nautical-link">Catalog</Link>
+                <Link href="/my-cabin" className="nautical-link">My Cabin</Link>
+                <NavAuth />
+                <Link href="/docs" className="nautical-link">API Docs</Link>
+                <Link href="/users" className="nautical-link">Users</Link>
+                <Link href="/cabins" className="nautical-link">Cabins</Link>
+              </nav>
             </div>
-            <nav className="flex gap-4 text-sm flex-wrap" aria-label="Primary">
-              <Link href="/" className="nautical-link">Home</Link>
-              <Link href="/dashboard" className="nautical-link">Dashboard</Link>
-              <Link href="/itinerary" className="nautical-link">Itinerary</Link>
-              <Link href="/catalog" className="nautical-link">Catalog</Link>
-              <Link href="/my-cabin" className="nautical-link">My Cabin</Link>
-              <Link href="/login" className="nautical-link">Login</Link>
-              <Link href="/docs" className="nautical-link">API Docs</Link>
-              <Link href="/users" className="nautical-link">Users</Link>
-              <Link href="/cabins" className="nautical-link">Cabins</Link>
-            </nav>
-          </div>
-        </header>
-        <main className="p-4 max-w-6xl mx-auto">
-          <Providers>
+          </header>
+          <main className="p-4 max-w-6xl mx-auto">
             {children}
-          </Providers>
-        </main>
-        <footer className="max-w-6xl mx-auto px-4 pb-6 text-xs text-slate-500">
-          © {new Date().getFullYear()} MV Horizon · Cruise Onboard Booking Demo
-        </footer>
+          </main>
+          <footer className="max-w-6xl mx-auto px-4 pb-6 text-xs text-slate-500">
+            © {new Date().getFullYear()} MV Horizon · Cruise Onboard Booking Demo
+          </footer>
+        </Providers>
       </body>
     </html>
   );

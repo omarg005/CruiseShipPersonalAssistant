@@ -17,15 +17,9 @@ export default function LoginPage() {
         />
         <button
           onClick={() => signIn("credentials", { email, callbackUrl: "/" })}
-          className="w-full bg-black text-white rounded p-2"
+          className="w-full btn"
         >
           Sign in
-        </button>
-        <button
-          onClick={() => signIn("email", { email, callbackUrl: "/" })}
-          className="w-full bg-gray-800 text-white rounded p-2"
-        >
-          Send magic link (console)
         </button>
         <div className="text-sm text-gray-500">
           Demo: alice@example.com, bob@example.com, carla@example.com, crew@example.com, admin@example.com
