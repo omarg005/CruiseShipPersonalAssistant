@@ -46,7 +46,7 @@ function DashboardInner() {
         {(bookings || []).length ? (
           <div className="space-y-2">
             {(bookings || []).map((b:any) => (
-              <div key={b.id} className="border rounded p-3">
+              <div key={b.id} className="card p-3">
                 <div className="text-sm text-gray-600">{new Date(b.createdAt).toLocaleString()} · {b.status}</div>
                 <ul className="list-disc pl-5">
                   {b.items.map((it:any, idx:number) => {
@@ -69,7 +69,7 @@ function DashboardInner() {
                 {b.status !== 'cancelled' && (
                   <div className="mt-2">
                     <button
-                      className="px-3 py-1 rounded border hover:bg-gray-50"
+                      className="btn"
                       onClick={async () => {
                         const ok = confirm('Cancel this booking?');
                         if (!ok) return;

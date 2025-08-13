@@ -22,7 +22,7 @@ function ItineraryInner() {
       ) : (
         <ul className="space-y-2">
           {sailing.itineraryDays.map((d: any) => (
-            <li key={d.dayNumber} className="border rounded p-2">
+            <li key={d.dayNumber} className="card p-3">
               <div className="font-medium">Day {d.dayNumber} · {new Date(d.date).toDateString()}</div>
               <div className="text-gray-600">{d.portName}</div>
             </li>

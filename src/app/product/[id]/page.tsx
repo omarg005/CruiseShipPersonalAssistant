@@ -98,10 +98,10 @@ function ProductInner() {
             <h2 className="font-medium mb-2">Timeslots</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2">
               {(slots || []).map((s) => (
-                <div key={s.id} className="border rounded p-3">
+                <div key={s.id} className="card p-3">
                   <div className="font-medium">{new Date(s.start).toLocaleString()}</div>
                   <div className="text-sm text-gray-600">Remaining: {s.remaining}</div>
-                  <button className="mt-2 px-3 py-1 rounded bg-black text-white disabled:opacity-50" disabled={!me?.guest || s.remaining < 1}
+                  <button className="mt-2 btn disabled:opacity-50" disabled={!me?.guest || s.remaining < 1}
                     onClick={() => createBooking.mutate({ timeslotId: s.id, productId: product.id })}>Book</button>
                 </div>
               ))}

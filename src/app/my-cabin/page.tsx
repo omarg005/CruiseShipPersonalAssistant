@@ -38,7 +38,7 @@ function MyCabinInner() {
       {!asn ? (
         <div>No cabin assignment found for the current sailing.</div>
       ) : (
-        <div className="border rounded p-3">
+        <div className="card p-3">
           <div className="font-medium">Cabin {thisCabin?.number || asn.cabinId} · Deck {thisCabin?.deck ?? '-'}</div>
           <div>Check-in: {new Date(asn.checkInDate).toDateString()}</div>
           <div>Check-out: {new Date(asn.checkOutDate).toDateString()}</div>

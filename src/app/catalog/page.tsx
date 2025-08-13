@@ -38,9 +38,9 @@ function CatalogInner() {
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {(products || []).map((p) => (
-            <a key={p.id} href={`/product/${p.id}`} className="border rounded p-3 hover:bg-gray-50">
+            <a key={p.id} href={`/product/${p.id}`} className="card p-3 hover:shadow-lg transition-shadow">
               <div className="font-medium">{p.title}</div>
-              <div className="text-gray-600 text-sm">{p.type}</div>
+              <div className="text-gray-600 text-sm uppercase">{p.type}</div>
             </a>
           ))}
         </div>
