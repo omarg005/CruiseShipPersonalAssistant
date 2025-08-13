@@ -48,6 +48,7 @@ export default function RootLayout({
                 <Link href="/my-cabin" className="nautical-link">My Cabin</Link>
                 <NavAuth />
                 <Link href="/docs" className="nautical-link">API Docs</Link>
+                <Link href="/mcp" className="nautical-link">MCP</Link>
                 <Link href="/users" className="nautical-link">Users</Link>
                 <Link href="/cabins" className="nautical-link">Cabins</Link>
               </nav>
