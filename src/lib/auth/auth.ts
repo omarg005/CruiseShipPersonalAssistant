@@ -34,7 +34,7 @@ export const authConfig: NextAuthConfig = {
       return token;
     },
     async session({ session, token }) {
-      session.user.role = (token as any).role || "guest";
+      (session as any).user.role = (token as any).role || "guest";
       (session as any).guestId = (token as any).guestId || null;
       return session;
     },
