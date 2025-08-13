@@ -34,6 +34,6 @@ export default function DocsPage() {
     };
   }, []);
 
-  return <div ref={containerRef} style={{ height: "100vh" }} />;
+  return <div ref={containerRef} style={{ height: "calc(100vh - 80px)" }} />;
 }
 

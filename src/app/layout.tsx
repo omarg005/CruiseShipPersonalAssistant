@@ -53,10 +53,9 @@ export default function RootLayout({
               </nav>
             </div>
           </header>
-          <main className="p-4 max-w-6xl mx-auto flex-1">
+          <main className="p-4 pb-24 max-w-6xl mx-auto flex-1">
             {children}
           </main>
-          <div className="h-16" />
           <Footer />
           </div>
         </Providers>
