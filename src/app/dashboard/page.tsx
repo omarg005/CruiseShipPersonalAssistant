@@ -1,7 +1,6 @@
 "use client";
 import Providers from "../providers";
 import { useQuery } from "@tanstack/react-query";
-import Link from "next/link";
 import { api } from "@/lib/api";
 
 export default function DashboardPage() {
@@ -51,10 +50,10 @@ function DashboardInner() {
                 <ul className="list-disc pl-5">
                   {b.items.map((it:any, idx:number) => {
                     const prod = productById.get(it.productId);
-                    const ts = timeslotById.get(it.timeslotId);
+                    const ts = timeslotById.get(it.timeslotId) as { start?: string } | undefined;
                     return (
                       <li key={it.id || `${b.id}-${it.timeslotId}-${idx}`}>
-                        <span className="font-medium">{prod?.title || it.productId}</span> <span className="text-xs uppercase text-gray-500">[{prod?.type}]</span> — {ts ? new Date(ts.start).toLocaleString() : it.timeslotId}
+                        <span className="font-medium">{prod?.title || it.productId}</span> <span className="text-xs uppercase text-gray-500">[{prod?.type}]</span> — {ts?.start ? new Date(ts.start).toLocaleString() : it.timeslotId}
                       </li>
                     );
                   })}
