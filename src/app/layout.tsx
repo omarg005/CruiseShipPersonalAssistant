@@ -36,12 +36,13 @@ export default function RootLayout({
               <span className="nautical-badge">HZN</span>
               <div className="text-sm">MV Horizon</div>
             </div>
-            <nav className="flex gap-4 text-sm">
+            <nav className="flex gap-4 text-sm flex-wrap" aria-label="Primary">
               <Link href="/" className="nautical-link">Home</Link>
               <Link href="/dashboard" className="nautical-link">Dashboard</Link>
               <Link href="/itinerary" className="nautical-link">Itinerary</Link>
               <Link href="/catalog" className="nautical-link">Catalog</Link>
               <Link href="/my-cabin" className="nautical-link">My Cabin</Link>
+              <Link href="/login" className="nautical-link">Login</Link>
               <Link href="/docs" className="nautical-link">API Docs</Link>
               <Link href="/users" className="nautical-link">Users</Link>
               <Link href="/cabins" className="nautical-link">Cabins</Link>
