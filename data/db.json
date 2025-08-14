@@ -2125,6 +2125,26 @@
         }
       ],
       "totalCents": 0
+    },
+    {
+      "id": "01K2MK50X5RPW8HMDAQMAQ473W",
+      "guestId": "01K2GE4ZQKZTSH3TV7NQ5Y767W",
+      "sailingId": "01K2GE4ZPX1GSXT01Q4P8JDS79",
+      "cabinId": "01K2GE4ZQ704KKDZ27G9Q5P6XD",
+      "status": "confirmed",
+      "createdAt": "2025-08-14T15:28:36.773Z",
+      "items": [
+        {
+          "productId": "01K2GE4ZQMVRTZDJVS58J3KFD3",
+          "timeslotId": "01K2GE4ZQMR75E6QSNZA1B4CBA",
+          "quantity": 1,
+          "unitPriceCents": 0
+        }
+      ],
+      "totalCents": 0,
+      "attendeeGuestIds": [
+        "01K2GE4ZQKZTSH3TV7NQ5Y767W"
+      ]
     }
   ],
   "payments": [
@@ -2135,6 +2155,14 @@
       "method": "demo",
       "status": "captured",
       "createdAt": "2025-08-13T00:44:14.971Z"
+    },
+    {
+      "bookingId": "01K2MK50X5RPW8HMDAQMAQ473W",
+      "amountCents": 0,
+      "method": "demo",
+      "status": "captured",
+      "id": "01K2MK50XVV1AR7ZNR0SWM6SS6",
+      "createdAt": "2025-08-14T15:28:36.795Z"
     }
   ],
   "users": [

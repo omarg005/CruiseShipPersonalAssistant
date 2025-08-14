@@ -59,7 +59,20 @@ function ProductInner() {
         return Promise.reject(data);
       }
       if (!res.ok) throw new Error(`${res.status}`);
-      return res.json();
+      // Some deployments may return 201 with an empty/non-JSON body; handle gracefully
+      const contentType = res.headers.get('content-type') || '';
+      if (contentType.includes('application/json')) {
+        return res.json();
+      }
+      try {
+        return await res.json();
+      } catch {
+        // Fallback minimal shape used by onSuccess to render the modal
+        return {
+          items: [{ timeslotId, productId }],
+          attendeeGuestIds: selectedGuestIds.length ? selectedGuestIds : [me?.guest?.id].filter(Boolean),
+        } as any;
+      }
     },
     onSuccess: (data) => {
       qc.invalidateQueries({ queryKey: ["bookings"] });
@@ -78,7 +91,7 @@ function ProductInner() {
         // retry booking
         createBooking.mutate(variables);
       } else {
-        const message = err?.detail || err?.title || (typeof err === 'string' ? err : 'Unknown error');
+        const message = err?.detail || err?.title || err?.message || (typeof err === 'string' ? err : 'Unknown error');
         alert(`Booking Error\n\n${message}`);
       }
     }
