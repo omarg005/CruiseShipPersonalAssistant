@@ -28,9 +28,17 @@ export default function DocsPage() {
     };
     document.body.appendChild(script);
 
+    // Force Swagger UI text to white
+    const override = document.createElement("style");
+    override.textContent = `
+      .swagger-ui, .swagger-ui * { color: #fff !important; }
+    `;
+    document.head.appendChild(override);
+
     return () => {
       document.body.removeChild(script);
       document.head.removeChild(css);
+      document.head.removeChild(override);
     };
   }, []);
 

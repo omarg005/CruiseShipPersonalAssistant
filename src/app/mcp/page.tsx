@@ -13,7 +13,7 @@ export default function MCPPage() {
   ${base}/api/bookings`;
   const llmSnippet = `You are connected to an MCP host providing a cruise booking API.\nBase: ${base}\nOpenAPI: ${openapi}\nAuth: Session cookie (NextAuth). Obtain via /login and pass cookie header.\nUse endpoints to search catalog, list timeslots, and create or cancel bookings while respecting conflicts and capacity.`;
   return (
-    <div className="prose max-w-none min-h-screen bg-blue-50">
+    <div className="prose max-w-none prose-invert">
       <h1>MCP Integration Guide</h1>
       <p>
         Configure your LLM client to use this application as a Model Context Protocol (MCP) host.
