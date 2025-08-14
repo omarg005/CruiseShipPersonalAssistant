@@ -4,6 +4,10 @@ export function getApiBase(): string {
   const host = mcp || base || "";
   if (!host) return "";
   // remove trailing slash
-  return host.endsWith("/") ? host.slice(0, -1) : host;
+  const normalized = host.endsWith("/") ? host.slice(0, -1) : host;
+  // In production, ignore localhost/127.0.0.1 API base to avoid broken calls on Vercel
+  const isLocal = /^https?:\/\/(localhost|127\.0\.0\.1)(:|\/|$)/i.test(normalized);
+  if (process.env.NODE_ENV === "production" && isLocal) return "";
+  return normalized;
 }
 

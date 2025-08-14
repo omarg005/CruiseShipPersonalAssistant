@@ -4,6 +4,7 @@ import path from "node:path";
 import { ulid } from "ulid";
 import type { Repository } from "./index";
 import type { Booking, Cabin, CabinAssignment, Delegation, Guest, Product, Sailing, Ship, Timeslot, UserAccount, Venue } from "@/schemas/models";
+import seededDb from "../../../data/db.json";
 
 type Db = {
   ships: Ship[];
@@ -34,11 +35,19 @@ let cachedMtimeMs = 0;
 async function loadDb(): Promise<Db> {
   if (!existsSync(DB_FILE)) {
     await mkdir(DATA_DIR, { recursive: true });
-    const empty: Db = { ships: [], sailings: [], cabins: [], guests: [], assignments: [], delegations: [], venues: [], products: [], timeslots: [], bookings: [], payments: [], users: [] };
-    await writeFile(DB_FILE, JSON.stringify(empty, null, 2));
-    cachedDb = empty;
-    cachedMtimeMs = Date.now();
-    return empty;
+    try {
+      const seeded = seededDb as unknown as Db;
+      await writeFile(DB_FILE, JSON.stringify(seeded, null, 2));
+      cachedDb = seeded;
+      cachedMtimeMs = Date.now();
+      return seeded;
+    } catch {
+      const empty: Db = { ships: [], sailings: [], cabins: [], guests: [], assignments: [], delegations: [], venues: [], products: [], timeslots: [], bookings: [], payments: [], users: [] };
+      await writeFile(DB_FILE, JSON.stringify(empty, null, 2));
+      cachedDb = empty;
+      cachedMtimeMs = Date.now();
+      return empty;
+    }
   }
   const st = await stat(DB_FILE);
   if (cachedDb && st.mtimeMs === cachedMtimeMs) {
