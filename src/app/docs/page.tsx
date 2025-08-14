@@ -31,7 +31,25 @@ export default function DocsPage() {
     // Force Swagger UI text to white
     const override = document.createElement("style");
     override.textContent = `
+      /* General: make default Swagger UI text white */
       .swagger-ui, .swagger-ui * { color: #fff !important; }
+
+      /* Exceptions: make Authorize button and its modal text dark for readability */
+      .swagger-ui .btn.authorize,
+      .swagger-ui .btn.authorize *,
+      .swagger-ui button.authorize,
+      .swagger-ui button.authorize * {
+        color: #111827 !important; /* gray-900 */
+        fill: #111827 !important;
+      }
+
+      .swagger-ui .modal-ux,
+      .swagger-ui .modal-ux *,
+      .swagger-ui .dialog-ux,
+      .swagger-ui .dialog-ux * {
+        color: #111827 !important; /* gray-900 */
+        fill: #111827 !important;
+      }
     `;
     document.head.appendChild(override);
 
