@@ -20,7 +20,13 @@ type Db = {
   users: UserAccount[];
 };
 
-const DATA_DIR = path.join(process.cwd(), "data");
+// Prefer a writable directory in serverless environments (e.g., Vercel)
+const SERVERLESS_TMP = process.env.TMP || process.env.TEMP || "/tmp";
+const DATA_DIR = process.env.DATA_DIR
+  ? process.env.DATA_DIR
+  : (process.env.VERCEL || process.env.NETLIFY || process.env.AWS_LAMBDA_FUNCTION_NAME)
+    ? path.join(SERVERLESS_TMP, "cruise-app-data")
+    : path.join(process.cwd(), "data");
 const DB_FILE = path.join(DATA_DIR, "db.json");
 
 let cachedDb: Db | null = null;
@@ -45,10 +51,19 @@ async function loadDb(): Promise<Db> {
 }
 
 async function saveDb(db: Db): Promise<void> {
-  await writeFile(DB_FILE, JSON.stringify(db, null, 2));
-  cachedDb = db;
-  const st = await stat(DB_FILE);
-  cachedMtimeMs = st.mtimeMs;
+  try {
+    await mkdir(DATA_DIR, { recursive: true });
+    await writeFile(DB_FILE, JSON.stringify(db, null, 2));
+    cachedDb = db;
+    const st = await stat(DB_FILE);
+    cachedMtimeMs = st.mtimeMs;
+  } catch (err) {
+    // In serverless, the filesystem may be read-only. Fall back to in-memory cache
+    // to avoid surfacing 500s for demo data writes.
+    console.warn("json repo saveDb fallback to memory only:", err);
+    cachedDb = db;
+    cachedMtimeMs = Date.now();
+  }
 }
 
 export function createJsonRepo(): Repository {
